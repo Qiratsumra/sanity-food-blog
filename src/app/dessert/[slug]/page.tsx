@@ -1,5 +1,6 @@
 'use client'
 
+import CommentsSection from '@/app/components/Comment';
 import author from '../../../../public/author.png'
 import { SanityClient, urlFor } from "@/sanity/sanity.client";
 import { groq } from "next-sanity";
@@ -28,7 +29,7 @@ export default async function Slug() {
               <p className="text-xs text-gray-400 uppercase font-semibold">BY Qirat Saeed</p>
             </div>
   <p className="text-lg text-gray-600 leading-relaxed">{product.description}</p>
-  
+<CommentsSection />  
 </div>
 
     </>
